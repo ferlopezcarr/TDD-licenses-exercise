@@ -1,0 +1,5 @@
+{
+    "mochaExplorer.files": "dist/test/**/*.js",
+    "mochaExplorer.require": "source-map-support/register",
+    "mochaExplorer.watch": "dist/**/*.js"
+}
