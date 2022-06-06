@@ -29,14 +29,8 @@ export default class SubscriptionService {
       );
     if (Number.isNaN(subscriptions))
       throw new Error(SubscriptionMessages.ERROR.SUBSCRIPTION_NUMBER.INVALID);
-
-    const lastTier =
-      SubscriptionConstants.SUBSCRIPTION_TIERS[
-        SubscriptionConstants.SUBSCRIPTION_TIERS.length - 1
-      ];
-    if (!!lastTier && lastTier?.minRange <= subscriptions) return lastTier;
     return SubscriptionConstants.SUBSCRIPTION_TIERS.find(
-      (tier) => tier.minRange <= subscriptions && subscriptions <= tier.maxRange
+      (tier) => tier.minRange <= subscriptions
     );
   }
 }

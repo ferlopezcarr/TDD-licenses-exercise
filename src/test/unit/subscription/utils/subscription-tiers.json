@@ -1,27 +1,22 @@
 [
     {
         "minRange": 1,
-        "maxRange": 2,
         "price": 299
     },
     {
         "minRange": 3,
-        "maxRange": 10,
         "price": 239
     },
     {
         "minRange": 11,
-        "maxRange": 25,
         "price": 219
     },
     {
         "minRange": 26,
-        "maxRange": 50,
         "price": 199
     },
     {
         "minRange": 51,
-        "maxRange": null,
         "price": 149
     }
 
